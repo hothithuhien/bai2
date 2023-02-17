@@ -1,0 +1,35 @@
+body {
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #000;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 46.5px;
+    margin-bottom: 0;
+
+}
+
+.banner .image1 {
+    height: 386.5;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+}
+
+.description h1, .description i, .description p {
+    margin: 15px 0;
+}
+
+.description i {
+    color: #939393;
+}
