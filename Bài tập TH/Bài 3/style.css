@@ -1,0 +1,48 @@
+body {
+font-size: 87.4%;
+font-family: 'Times New Roman', Times, serif
+}
+
+a {
+    font-weight: bold;
+}
+a:link {
+    color: rgb(68, 64, 187);
+}
+a:hover, a:focus {color: rgb(19, 140, 246);
+
+}
+ul {
+    line-height: 1.5;
+}
+
+hgroup h1 {
+    color: rgb(29, 121, 212);
+    text-shadow: 4px -4px 4px rgb(37, 17, 214);
+    font-size: 300%;
+    margin-left: 500px;
+    margin-right: 500px;
+    
+}
+hgroup h2 {
+    color: aquamarine;
+    text-shadow: 2px -2px 0px rgb(19, 209, 148);
+    font-size: 200%;
+}
+div hgroup {
+    text-align: center;
+}
+
+image {
+    float: left;    
+}
+
+video {
+    width: 100;
+    height: auto;
+}
+
+.position {
+    display: flex;
+    position: relative;
+}
