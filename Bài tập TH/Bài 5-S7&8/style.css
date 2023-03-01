@@ -1,0 +1,68 @@
+/* Layout Header */
+body{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.header-left{
+    width: 200px;
+   height: 100%; 
+}
+
+.header-right{
+    width: 200px;
+   height: 100%; 
+}
+.banner{
+    position: relative;
+}
+.seach_container {
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    position: absolute;
+    top: 50vh;
+    left: 40vh ;
+}
+/* layout body */
+
+.container {
+    height: 50px;
+    background-color: aquamarine;
+}
+
+/* product */
+
+.container-ima {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+
+
+
+}
+
+/* layout footer */
+
+.footer {
+    margin-top: 20px;
+    height: 40px;
+    background-color: yellow;
+}

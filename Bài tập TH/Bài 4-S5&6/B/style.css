@@ -1,0 +1,107 @@
+html {
+    background-color: wheat;
+}
+
+body {
+font-size: large;
+font-family: 'Times New Roman', Times, serif;
+width: auto;
+height: auto;
+background-color: white;
+margin: 10px 20px 10px 20px;
+padding: 20px;
+border: 2px black solid;
+}
+
+/*header*/
+
+.position {
+    display: flex;
+    border-bottom: 5px solid rgb(231, 174, 70);
+}
+hgroup h1 {
+    color: rgb(29, 121, 212);
+    text-shadow: 4px -4px 4px rgb(37, 17, 214);
+    font-size: 150%;
+    
+}
+hgroup h2 {
+    color: aquamarine;
+    text-shadow: 2px -2px 0px rgb(19, 209, 148);
+    font-size: 100%;
+}
+
+div hgroup {
+    text-align: left;
+    margin: 10px 0px 0px 50px;
+}
+
+image {
+    float: left;  
+    padding: 10px 10px;  
+}
+
+/*section*/
+
+main {
+    float: left;
+    height: auto;
+    width: 60%;  
+    border-right: 5px solid rgb(231, 174, 70);
+}
+
+.block {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}
+
+.column {
+    margin-right: 10px;
+    padding-right: 10px;
+
+}
+
+section aside {
+    float: right;
+    width: 40%;
+}
+
+section {
+    padding: 10px 0px 0px 0px; 
+}
+ 
+ section h1 {
+     margin-top: 0px;
+}
+
+.right {
+    margin-left: 10px;
+    
+}
+
+.trangtri {
+    font-weight: bold;
+    color: rgb(68, 64, 187);
+}
+
+a:hover, a:focus {color: rgb(19, 140, 246);
+
+}
+
+ul {
+    line-height: 1.5;
+}
+
+/*footer*/
+
+footer {
+    clear: both;
+    border-top: 5px solid rgb(231, 174, 70);
+}
+
+footer p {
+    text-align: right;
+}
+
+
+
