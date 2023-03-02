@@ -1,0 +1,153 @@
+html {
+    background-color: wheat;
+}
+
+body {
+font-size: large;
+font-family: 'Times New Roman', Times, serif;
+width: auto;
+height: auto;
+background-color: white;
+margin: 10px 20px 10px 20px;
+padding: 20px;
+border: 2px black solid;
+}
+
+/* Phần header */
+
+header {
+    top: 20px;
+    width: 95%;
+    background-color: rgb(186, 241, 241);
+    z-index: 1;
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid rgb(231, 174, 70); 
+}
+
+.position {
+    display: flex;
+      
+}
+
+.position image {
+    float: left;  
+    padding: 10px 10px;  
+}
+
+hgroup h1 {
+    color: rgb(29, 121, 212);
+    text-shadow: 4px -4px 4px rgb(37, 17, 214);
+    font-size: 150%;
+    
+}
+hgroup h2 {
+    color: aquamarine;
+    text-shadow: 2px -2px 0px rgb(19, 209, 148);
+    font-size: 100%;
+}
+
+div hgroup {
+    text-align: left;
+    margin: 10px 0px 0px 50px;
+}
+
+.notificate {
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+   
+}
+
+/* Phần section*/
+section {
+    margin-top: 120px;
+}
+.block {
+    display: flex;
+    margin: 20px 0px 10px 0px;
+}
+
+main {
+    float: left;
+    height: auto;
+    width: 60%;  
+    border-right: 5px solid rgb(231, 174, 70);
+}
+
+.column {
+    margin-right: 10px;
+    padding-right: 10px;
+    column-count: 2; 
+}
+
+section h1 {
+    margin-top: 0px;
+}
+
+section aside {
+    float: right;
+    width: 40%;
+}
+
+@media screen and (max-width: 1440px) {
+    .column {
+        column-count: 2; 
+    }   
+}
+@media screen and (max-width: 1023px) {
+    .column {
+        column-count: 1; 
+    }   
+}
+@media screen and (max-width: 600px) {
+    .column {
+        column-count: 1;
+        width: 100%;
+    }  
+    .block {
+        display: block;
+    }
+    main {
+        width: 100%;
+    }
+    section aside {
+        float: left;; 
+        width: 100%;
+    } 
+    
+}
+
+.right {
+    margin-left: 10px;
+}
+
+a {
+    font-weight: bold;
+}
+
+a:link {
+    color: rgb(68, 64, 187);
+}
+
+a:hover, a:focus {color: rgb(19, 140, 246);
+}
+
+ul {
+    line-height: 1.5;
+}
+
+/*phần Footer*/
+
+footer {
+    clear: both;
+    border-top: 5px solid rgb(231, 174, 70);
+}
+
+footer p {
+    text-align: right;
+}
+
+
