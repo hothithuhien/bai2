@@ -1,0 +1,115 @@
+/*Header*/
+
+.title {
+    display: flex;    
+}
+.title h1 {
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-left: 40px;
+    color: red;
+}
+.title a {
+    text-decoration: none;
+    font-size: larger;
+    margin: 10px;
+    color: rgb(230, 60, 60);
+}
+
+.title a:hover {
+    color: rgb(48, 41, 235);
+} 
+
+/*Main*/
+
+.makeup {
+    color: red;
+}
+
+.main_menu ul {
+    display: block;
+    position: relative;
+    list-style-type: none;
+}
+   
+.main_menu li {
+    margin-top: 20px;
+    width: 15%;
+    padding-left: 20Px;
+    font-size: 20px;
+    position: relative;
+}
+
+.main_menu >ul>li {
+    border: 1px solid silver;
+}
+
+.main_menu a {
+    text-decoration: none;
+}
+
+.menu_product {
+    margin-left: 200px;
+    width: 100%;
+    
+}
+.menu_product ul {
+    display: none;
+    position: absolute;
+    height: 400px;
+    top: -10px;
+    color: red;
+}
+.menu_product li {
+    margin-left: 10px;
+    padding: 10px;
+    width: 10em;
+    margin-top: 0px;
+    position: relative;
+    
+}
+.iphone > ul {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+}
+.iphone>ul>li {
+    margin-left: -50px;
+    top: 50px;      
+}
+
+.iphone {
+    margin: 0;
+    left: 0;
+}
+
+.menu_Product_child_1> ul {
+    display: none;
+    position: absolute;   
+}
+
+.menu_Product_child_2> ul {
+    display: none;
+    position: absolute;
+}
+
+.main_menu li:hover>.menu_product > ul {
+    display: flex;
+    
+}
+
+.iphone >ul>li:hover .menu_product_child_1 >ul {
+ display: block;
+ margin-left: 100px;
+ top: 0px;
+ background-color: beige;
+ z-index: 1;
+}
+
+.iphone >ul>li:hover .menu_product_child_2 >ul {
+    display: block;
+    margin-left: 100px;
+    top: 0px;
+    background-color: beige;
+    z-index: 1;
+}
