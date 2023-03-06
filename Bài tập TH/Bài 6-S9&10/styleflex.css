@@ -1,0 +1,84 @@
+html {
+    background-color: wheat;
+}
+
+body {
+font-size: large;
+font-family: 'Times New Roman', Times, serif;
+width: auto;
+height: auto;
+background-color: white;
+margin: 10px 20px 10px 20px;
+padding: 20px;
+border: 2px black solid;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    border-bottom: 5px solid rgb(231, 174, 70);
+    justify-content: start;
+}
+
+.header-left {   
+    padding: 10px 10px;  
+}
+.header-right h1 {
+    color: rgb(29, 121, 212);
+    text-shadow: 4px -4px 4px rgb(37, 17, 214);
+    font-size: 150%;
+}
+
+.header-right h2 {
+    color: aquamarine;
+    text-shadow: 2px -2px 0px rgb(19, 209, 148);
+    font-size: 100%;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+
+}
+.main-left {
+    padding-top: 10px;
+    width: 60%;
+    column-count: 2; 
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+.main-left h1 {
+    margin-top: 0px;
+}
+.main-right {
+    width: 40%;
+    border-left: 5px solid rgb(231, 174, 70);
+    padding-left: 10px;
+}
+.main-right h1 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.trangtri {
+    font-weight: bold;
+    color: rgb(68, 64, 187);
+}
+
+a:hover, a:focus {color: rgb(19, 140, 246);
+}
+
+ul {
+    line-height: 1.5;
+}
+
+/*Footer*/
+.footer {
+    border-top: 5px solid rgb(231, 174, 70);
+}
+.footer p {
+    text-align: end;
+}
+
+
+

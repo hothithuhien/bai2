@@ -1,0 +1,43 @@
+table {
+    text-align: center;
+    border-spacing: 50px;
+}
+
+.content-customer-name {
+    display: flex;
+    align-items: center;
+}
+
+.content-customer-name img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.Categories {
+    color: red;
+    border: 1px solid red;
+    border-radius: 1.5rem;
+
+}
+.Categories:hover {
+    background-color: red;
+    color: white;
+}
+.Shipping {
+    display: flex;
+    width: 70px;
+    height: 10px;
+}
+.Shipping-bar1 {
+    width: 20px;
+    border: 1px solid silver;
+    background-color: brown;
+    border-radius:5px 0px 0px 5px ;
+}
+.Shipping-bar2 {
+    width: 50px;
+    border: 1px solid silver;
+    background-color: silver;
+    border-radius:0px 5px 5px 0px ;
+}
