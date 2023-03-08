@@ -14,6 +14,27 @@ table {
     border-radius: 50%;
     margin-right: 10px;
 }
+.Status {
+    display: flex;
+   align-items: center;
+}
+.Status-1 {
+    width: 10px;
+    height: 10px;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10px; 
+}
+.Status-2 {
+    width: 0.5px;
+    height: 0.5px;
+    border: 2px solid greenyellow;
+    border-radius: 0.25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
 .Categories {
     color: red;
     border: 1px solid red;
@@ -30,14 +51,18 @@ table {
     height: 10px;
 }
 .Shipping-bar1 {
-    width: 20px;
+    width: 40%;
     border: 1px solid silver;
     background-color: brown;
     border-radius:5px 0px 0px 5px ;
 }
 .Shipping-bar2 {
-    width: 50px;
+    width: 60%;
     border: 1px solid silver;
     background-color: silver;
     border-radius:0px 5px 5px 0px ;
+}
+.Product img {
+    width: 20px;
+    height: 20px;
 }

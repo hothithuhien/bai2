@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+  <title>form</title>
+  <link rel="stylesheet" href="styleform.css">
+</head>
+
+<body>
+  <form action="" class="form-wrap">
+    <h3>Form Validation</h5>
+      <div class="form-wrap-p">
+        <p>Validation of the form is made possible using powerful validator plugin for bootstrap</p>
+      </div>
+      <div class="form-email">
+        <p>Email address:</p>
+        <input type="text" name="email" placeholder="Enter email" required />
+      </div>
+      <div class="form-pass">
+        <div class="form-pass-left">
+          <p>Password</p>
+          <input type="text" name="password" placeholder="Enter password" required />
+        </div>
+        <div class="form-pass-right">
+          <p>Confirm password</p>
+          <input type="text" placeholder="Confirm password" required />
+        </div>
+      </div>
+      <p>Regular select</p>
+      <select name="style-and-size">
+        <option value="Newyork">Newyork</option>
+        <option value="Chicago" selected>Chicago</option>
+        <Option value="Boston">Boston</option>
+        <option value="Texas">Texas</option>
+      </select>
+      <p>Multiselect</p>
+      <select>
+        <option value="Newyork">Newyork</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Boston">Boston</Option>
+        <option value="Texas">Texas</option>
+      </select>
+      <br>
+      <div class="section">
+        <p>Section Example</p>
+        <div class="section-line"></div>
+      </div>
+      <br>
+      <div class="form-pass">
+        <div class="form-pass-left">
+          <p>First Name</p>
+          <input type="text" name="last name" placeholder="Enter first name" />
+        </div>
+        <div class="form-pass-right">
+          <p>Last name</p>
+          <input type="text" placeholder="Enter last name" />
+        </div>
+      </div>
+      <div class="form-pass">
+        <div class="form-pass-left">
+          <p>Date of birth</p>
+          <input type="datetime" name="last name" placeholder="Date of birth" />
+        </div>
+        <div class="form-pass-right">
+          <p>Twitter User</p>
+          <div class="Twitter-user">
+            <div class="Twitter-left">@</div>
+            <div class="Twitter-text">
+              <input type="text" placeholder="Twitter User" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <p>Example textarea
+      <p>
+        <textarea id="" name="" rows="4"></textarea>
+      <div class="checkbox">
+        <input class="check" type="checkbox" />
+        <p>I agree to terms and conditions</p>
+      </div>
+      <button> Submit</button>
+  </form>
+</body>
