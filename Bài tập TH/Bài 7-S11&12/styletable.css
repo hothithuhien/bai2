@@ -65,4 +65,9 @@ table {
 .Product img {
     width: 20px;
     height: 20px;
+    transition: all 2s;
+}
+
+.Product img:hover{
+    transform: translate(0px, -10px);
 }
