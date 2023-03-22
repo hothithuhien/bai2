@@ -1,30 +1,124 @@
-.header-container {
-    display: block;
-}
 
-.header-left-right {
+.header-container {
     display: flex;
     width: 100%;
-    height: 50px;
-    margin-left: 60px;
+    height: 40px;
+    margin-left: 80px;
 }
+/* Header left layout*/
+
 .header-left {
     width: 60%;
     display: flex;
 }
+
 .header-right {
     width: 40%;
-    background-color: blueviolet;
+
 }
+
 .header-left-img {
-    width: 10em;
+    width: 8em;
+    
+ 
 }
+
 .header-left-img img {
     width: 57px;
     height: 40px;
-}
-.header-left-search {
-    width: 80em;
-    background-color: aqua;
+ 
 }
 
+.header-left-search {
+    width: 80em;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(221, 221, 227);
+    border-radius: 7px;
+}
+
+.header-left-search  {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.img-search {
+    width: 5%;
+   padding-left: 20px;
+   padding-top: 10px;
+}
+
+.img-search img {
+    width: 1.5em;
+    height: 1.5em;
+    
+}
+.input-search {
+    width: 85%;
+    
+}
+.input-search form input {
+    border: 0;
+    outline: 0;
+}
+
+.button-search {
+    width: 10%;
+    border-left: 1px solid rgb(221, 221, 227);
+    text-align: center;
+    
+    
+}
+.button-search button {
+    background-color: white;
+    color: blue;
+    border: 0;
+    height: 38px;
+    
+}
+.button-search button:hover {
+    background-color: aqua;
+}
+.button-search:hover {
+    background-color: aqua;
+}
+/*Header right layout*/
+.header-right {
+    display: flex;
+    width: 35%;
+}
+.trangchu {
+    width: 20%;
+    align-items: center;
+
+}
+.trangchu img {
+    width: 24px;
+    height: 24px;
+   
+}
+.trangchu a {
+    text-decoration: none;
+    color: blue;
+    
+}
+.astra {
+    width: 20%;
+    align-items: center;
+}
+.astra img {
+    width: 24px;
+    height: 24px;
+}
+.taikhoan {
+    width: 20%;
+}
+.taikhoan img {
+    width: 24px;
+    height: 24px;
+    
+}
+.giohang img {
+    width: 50px;
+    height: 50px; 
+}

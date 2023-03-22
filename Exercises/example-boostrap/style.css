@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+.btn-success{
+    background-color: #cd7613;
+}
+.container-fluid {
+   
+}
+
+.demo-1{
+    height: 50px;
+}
+.search input {
+    border: 1px solid black;
+}
+.address {
+    display: flex;
+    justify-content: center;
+}
+.title {
+    padding-left: 5px;
+}
+.title-product {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.title-product:hover {
+    overflow: initial;
+}
+.demo-center-1 {
+    margin: 10px 150px 10px 150px;
+}
+.image-center-1 {
+    width: 62.2px;
+    height: 62.2px;
+    padding-left: 10px;
+    
+}
+.demo-center-img {
+    overflow: hidden;
+    display: inline-flex;
+    height: 62.2px;
+}
+.image-span {
+    width: 62.2px;
+    height: 62.2px;
+    background-color: rgb(79, 67, 67);
+    padding-left: 20px;
+    font-size: small;
+    color:white;
+}
+.demo-center-img-upper {
+    justify-content: center;
+}
+.col-right {
+    padding-left: 10px;
+    border-left: 1px solid rgb(227, 221, 221);
+}
+.title-right {
+    color: #242424;
+    font-size: 24px;
+}
+.right-review {
+    display: flex;
+    align-items: center;
+
+}
+.right-review-sale {
+    margin-left: 10px;
+    border-left: 1px solid rgb(227, 221, 221);
+    padding-left: 10px;
+}
+.container-left {
+    margin-top: 20px;
+}
+.product-upper {
+    
+}
+.product-price {
+    display: flex;
+    align-items:baseline;
+    margin-left: 20px;
+}
+.product-price__current-price {
+    color: red;
+    font-size: xx-large;
+}
+.product-price__list-price {
+    text-decoration: line-through;
+}
+.product-price__discount-rate {
+    color: red;
+}
+.product-price-below {
+    display: flex;
+    align-items: center;
+}
+#thuong-asa {
+border-radius: 4px;
+background-color: rgb(242, 240, 254);
+display: flex;
+width: fit-content;
+-webkit-box-align: center;
+align-items: center;
+padding: 4px 8px;
+border: 0.5px solid rgb(198, 188, 248);
+margin: 0px;
+margin: 10px 10px 10px 20px;
+}
+.coupon__text {
+    margin: 20px 0px 20px 0px;
+}
+.coupon__tags {
+    display: flex;
+    align-items: center;
+}
+.coupon__tag {
+    margin-right: 20px;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid blue;
+    border-radius: 5px;   
+}
+.coupon__text_link {
+    margin: 20px 0px 20px 0px;
+}
+.coupon__text_link_a {
+    color: black;
+}
+.image-gift img {
+    width: 62px;
+    height: 62px;
+    margin: 20px 0px 20px 0px;
+}

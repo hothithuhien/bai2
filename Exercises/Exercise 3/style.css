@@ -16,6 +16,10 @@ ul {
     line-height: 1.5;
 }
 
+.position {
+    display: flex;
+}
+
 hgroup h1 {
     color: rgb(29, 121, 212);
     text-shadow: 4px -4px 4px rgb(37, 17, 214);
@@ -37,12 +41,6 @@ image {
     float: left;    
 }
 
-video {
-    width: 100;
-    height: auto;
-}
 
-.position {
-    display: flex;
-    position: relative;
-}
+
+
