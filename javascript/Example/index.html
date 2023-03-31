@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // 1
+    var arrNumber = [2, 5 ,8, 6]; // khai báo 1 mảng só nguyên
+
+    console.log('arr: ', arrNumber);
+    console.log('arr length: ', arrNumber.length);
+    console.log('arr: ', arrNumber[2]);
+
+    // for
+    var sum = 0;
+    for(var i = 0; i < arrNumber.length; i++){
+        sum = sum + arrNumber[i];
+    }
+
+    console.log('sum: ', sum);
+    // i = 0 -> if 0 < 4 -> vòng lặp 1
+    // -> sum = 0 -> arrNumber = 2 -> sum = 2;
+
+    // vòng lặp thứ 2
+    // i++ <=> i +1 -> i = 1-> 1 < 4
+    // sum = 7
+
+    // i++ = 2 -> 2 < 4
+    // sum = 15
+
+    // i++ = 3
+    //sum = 21
+
+    // i++ = 4 -> 4 < 4
+    var max = arrNumber[0];
+    for(var i = 1; i < arrNumber.length; i++){
+        if(arrNumber[i]>max){
+            max = arrNumber[i];
+        }
+    }
+    console.log('max: ', max);
+    var min = arrNumber[0];
+    for(var i = 1; i<arrNumber.length; i++){
+        if(arrNumber[i]<min){
+            min = arrNumber[i];
+        }
+    }
+    console.log('min: ', min);
+    
+</script>
+</html>

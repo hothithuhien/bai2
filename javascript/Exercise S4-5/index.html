@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 500px;
+            font-size: large;
+        }
+
+        .error {
+            color: red;
+            font-size: small;
+        }
+
+        .boder_form {
+            border: 1px solid red;
+            outline: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form id="info_form" name="info_form" action="">
+        <label>First Name:</label><br>
+        <input id="fname" type="text">
+        <span class="error">*</span>
+        <br><br>
+        <label>Last Name:</label><br>
+        <input id="lname" type="text">
+        <span class="error">*</span>
+        <br><br>
+        <label>Age:</label><br>
+        <input id="Age" type="number">
+        <span class="error">*</span><br><br>
+        <label>Website</label><br>
+        <input id="web" type="text">
+        <span class="error">*</span>
+        <br><br>
+        <input id="submit_form" type="button" value="submit">
+    </form>
+    <script>
+        var $ = function (id) { return document.getElementById(id); };
+        var validate = function () {
+            var isValid = true
+            var fistname = $("fname").value;
+            var lastname = $("lname").value;
+            var age = $("Age").value;
+            var website = $("web").value;
+            var message = "This file is require";
+
+            if (fistname == "") {
+                $("fname").nextElementSibling.firstChild.nodeValue = message;
+                $("fname").getAttribute("class"); $("fname").setAttribute("class", "boder_form"); isValid = false;
+
+            } else {
+                $("fname").nextElementSibling.firstChild.nodeValue = "";
+                $("fname").removeAttribute("class");
+            }
+
+            if (lastname == "") {
+                $("lname").nextElementSibling.firstChild.nodeValue = message;
+                $("lname").getAttribute("class"); $("lname").setAttribute("class", "boder_form"); isValid = false;
+            } else {
+                $("lname").nextElementSibling.firstChild.nodeValue = "";
+                $("lname").removeAttribute("class");
+            }
+
+            if (age == "") {
+                $("Age").nextElementSibling.firstChild.nodeValue = message;
+                $("Age").getAttribute("class"); $("Age").setAttribute("class", "boder_form"); isValid = false;
+            } else {
+                $("Age").nextElementSibling.firstChild.nodeValue = "";
+                $("Age").removeAttribute("class");
+            }
+
+            if (website == "") {
+                $("web").nextElementSibling.firstChild.nodeValue = message;
+                $("web").getAttribute("class"); $("web").setAttribute("class", "boder_form"); isValid = false;
+            } else {
+                $("web").nextElementSibling.firstChild.nodeValue = "";
+                $("web").removeAttribute("class");
+            }
+
+            if (isValid == true) { $("info_form").submit; }
+        }
+
+        $("submit_form").onclick = validate;
+        $("fname").focus();
+        $("fname").onfocus = validate;
+
+    </script>
+</body>
+
+</html>

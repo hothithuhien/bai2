@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numberarr = [1, 65, 3, 25, 93, 28];
+        console.log('arr: ', numberarr);
+        var maxNumber = numberarr[0]
+        for (var i = 1; i < numberarr.length; i++) {
+            if (numberarr[i] > maxNumber) {
+                maxNumber = numberarr[i];
+            }
+        }
+        console.log("max number:", maxNumber);
+        var minNumber = numberarr[0];
+        for (var i = 1; i < numberarr.length; i++) {
+            if (numberarr[i] < minNumber) {
+                minNumber = numberarr[i]
+            }
+        }
+        console.log('min number:', minNumber);
+        var numbersGreaterThan10 = [];
+        for (var i = 0; i < numberarr.length; i++) {
+            if (numberarr[i] > 10) {
+                numbersGreaterThan10[numbersGreaterThan10.length] = numberarr[i]
+            }
+        }
+        console.log("So lon hon 10", numbersGreaterThan10);
+        var sum = 0;
+        for (var i = 0; i < numberarr.length; i++) {
+            sum = sum + numberarr[i]
+        }
+        console.log ("Sum", sum);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
