@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const text = `Pokémon (Japanese: ポケモン Hepburn: Pokemon?) (English: /ˈpoʊkɪˌmɒn, -ki-, -keɪ-/)[1][2] also known as Pocket Monsters (Japanese: ポケットモンスター Hepburn: Poketto Monsutā?, n. d Pocket Monsters) in Japan, is a media franchise managed by The Pokémon Company, a Japanese consortium between Nintendo, Game Freak and Creatures.[3] The franchise rights are shared by all three companies, but Nintendo is the sole owner of the trademark.[4] The franchise was created by Satoshi Tajiri in 1999,[5] and focuses on fictional creatures called "Pokémon", which humans, are known as Pokémon Trainers. Catch and train to fight each other to play sports. The English tagline for the franchise is "Gotta Catch 'Em All".[6][7] The works in the franchise are set in the Pokémon universe.`;
+
+        const numOfPokemons = (text.match(/Pokémon/g) || []).length; 
+        const replacedText = text.replace(/Pokémon/g, "Pocket Monster"); 
+        const sentences = replacedText.split(/\.\s/); 
+        sentences.forEach(sentence => console.log(sentence)); 
+
+    </script>
+</body>
+
+</html>

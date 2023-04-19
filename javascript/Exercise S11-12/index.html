@@ -33,7 +33,7 @@
             <input id="submit_form" type="button" value="Submit"><span> </span>
         </div>
         <div class="table_form">
-            t
+            
         </div>
     </form>
     <script>
@@ -56,7 +56,13 @@
                 studentid.nextElementSibling.firstChild.nodeValue=""
             }
 
-            if(studentName.value.match(patternName)){
+            if(studentName.value==="") {
+                studentName.nextElementSibling.firstChild.nodeValue=message;
+                isValid = false;
+            } else {
+                studentName.nextElementSibling.firstChild.nodeValue="";
+            }
+            if(studentName.value > 5 && studentName.value <15) {
                 console.log('ok');
             }else{
                 console.log('ssss');

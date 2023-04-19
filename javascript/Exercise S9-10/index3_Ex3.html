@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Exercise 3*/
+        var numberArr = [1, -2, 3, 4, -9, 6, 5, 2, 6, 7, 0, 3, 5, 3, -6, 4, -7];
+        var comparision = function (x, y) {
+            return x - y;
+        }
+        numberArr.sort(comparision);
+        console.log(numberArr);
+        var comparision = function (x, y) {
+            return y - x;
+        }
+        numberArr.sort(comparision);
+        console.log(numberArr);
+        function sumAroundMax(numberArr) {
+            var max = numberArr[0];
+            var indexMax = 0;
+            for (var i = 1; i < numberArr.length; i++) {
+                if (numberArr[i] > max) {
+                    max = numberArr[i];
+                    indexMax = i;
+                }
+            }
+            var sum = 0
+            var front = indexMax - 2
+            if (front >= 0) {
+                front = indexMax - 2
+            } else {
+                front = 0;
+            }
+            var back = indexMax + 2
+            if (back < numberArr.length) {
+                back = indexMax + 2
+            } else {
+                back = numberArr.length - 1;
+            }
+            for (var i = front; i <= back; i++) {
+                if (i != indexMax) {
+                    sum += numberArr[i]
+                }
+            }
+            return sum;
+        }
+        console.log(sumAroundMax(numberArr));
+    </script>
+</body>
+
+</html>

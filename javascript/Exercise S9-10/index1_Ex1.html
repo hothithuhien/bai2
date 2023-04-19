@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* print all member of array to screen*/
+        var numberArr = [2, 14, 10, 9, 8, 4, 7, 45, 29, 4];
+        numberArr.forEach(number => console.log(number));
+
+        /* find value is exits in array or not*/
+        function findValue(value, numberArr) {
+            if (numberArr.includes(value) === true) {
+                return "Value found in Array"
+            } else {
+                return "Value not found in Array"
+            }
+        }
+        console.log(findValue(3, numberArr));
+        console.log(findValue(10, numberArr));
+
+        /* find the maximum value in this array*/
+        var sum = 0;
+        numberArr.forEach(number => { sum += number });
+        console.log(sum);
+
+        /*find the maximum value in this array*/
+        var max = numberArr[0];
+        for (var i = 1; i < numberArr.length; i++) {
+            if (max < numberArr[i]) {
+                max = numberArr[i]
+                console.log(max);
+            }
+        }
+
+        /*sort all elements of array by descending*/
+        var comparision = function (x, y) {
+            return y - x;
+        }
+        numberArr.sort(comparision);
+        console.log(numberArr);
+
+        /*Setup a men to permit user enter a number to select to run a function.*/
+        console.log("please choise number:");
+        console.log("1. print array");
+        console.log("2. Search a membery");
+        console.log("3. Find maximum number");
+
+        var choise = parseInt(prompt('Enter the number'));
+        if (choise === 1) {
+            numberArr.forEach(number => console.log(number));
+        } else if (choise === 2) {
+            var value_number = parseInt(prompt('Enter the value'));
+            console.log(findValue(value_number, numberArr));
+        } else if (choise === 3) {
+            console.log(max);
+        } else {
+            console.log('Please enter correct Number');
+        }
+    </script>
+</body>
+
+</html>

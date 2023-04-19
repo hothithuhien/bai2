@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
     <script>
+        /*Exercise 1*/
         var names = ["hoa", "hong", "tram", "minh", "anh", "nhan"];
         names.push("jonny");
         console.log(names);
         names.unshift("Anna");
         console.log(names);
 
-        function replaceIndexArray(index, nameStudent){
+        function replaceIndexArray(index, nameStudent) {
             names[index] = nameStudent;
         }
-
         replaceIndexArray(2, "Yui Hatano");
         replaceIndexArray(4, "aaaa");
-
         console.log('names: ', names);
-        names.splice(1,1);
+        names.splice(1, 1);
         console.log(names);
-        names.splice(2,1,"chau");
+        names.splice(2, 1, "chau");
         console.log(names);
-        names.splice(1,1);
         names.pop();
-        var student = ["hanh", 'huong', 'anh', 'chan'];
-        var plus = concat(names,student);
-
-
-
+        console.log(names.splice(1, 5));
+        
     </script>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*Exercise 2*/
+        var totalspent = function () {
+            var moneyspent;
+            var moneyspentarr = [];
+            do {
+                moneyspent = prompt("Nhập số tiền (nhập 'Xong' để kết thúc)", 100);
+
+                if (moneyspent.toUpperCase() === "XONG") {
+                    break;
+                } else if (moneyspent != null && isNaN(moneyspent) || parseFloat(moneyspent) <=0) {
+                    alert("Sai gia tri nhap vao!")
+                } else {
+                    moneyspentarr.push(parseFloat(moneyspent));
+                }
+            } while (moneyspent != null && moneyspent.toUpperCase() !== "XONG")
+
+            var total = moneyspentarr.reduce(function(sum,money){
+                return sum + money;
+            },0);
+            alert("Tổng số tiền chi tiêu là:"+ total);
+        }
+        totalspent();
+        
+    </script>
+</body>
+
+</html>
