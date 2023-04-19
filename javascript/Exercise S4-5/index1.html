@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var boichung = function (x, y) {
+            var max = 0;
+            if ((typeof x !== 'number') || (typeof y !== 'number'))
+                return false;
+            if (x == 0 || y == 0) return 0;
+            if (x > y) max = x; else max = y;
+            while (max % x !== 0 || max % y !== 0) {
+                max += 1;
+            }
+            return max;
+        }
+        document.write("Bội chung nhỏ nhất là: " + boichung(4, 2) + "<br\>");
+
+        var uocchung = function (numberarr) {
+            var min = numberarr[0];
+            for (var i = 1; i < numberarr.length; i++) {
+                if (min > numberarr[i]) min = numberarr[i];
+            }
+
+            while (min >= 1) {
+
+                for (var i = 0; i < numberarr.length; i++) {
+                    if (numberarr[i] % min !== 0) {
+                        min -= 1;
+                        break
+                    }
+                    if (i == numberarr.length - 1) return min;
+                }
+
+            }
+
+            return min;
+        }
+        document.write("Ước chung lớn nhất là: " + uocchung([3, 6, 12, 36]));
+    </script>
+</body>
+
+</html>

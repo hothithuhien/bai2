@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label>ID:</label>
+            <input id="idStudent" type="text">
+            <span > </span>
+        </div>
+        <div>
+            <label for="">Name:</label>
+            <input id="nameStudent" type="text"><span> </span>
+        </div>
+        <div>
+            <label for="">Birthday:</label>
+            <input id="birthdayStudent" type="date"><span> </span>
+
+        </div>
+        <div>
+            <label for="">Phone Number:</label>
+            <input id="phoneStudent" type="number"><span> </span>
+
+        </div>
+        <div>
+            <input id="submit_form" type="button" value="Submit"><span> </span>
+        </div>
+        <div class="table_form">
+            t
+        </div>
+    </form>
+    <script>
+        var getElementById = function(id){
+            return document.getElementById(id)
+        };
+
+        var studentid = getElementById("idStudent");
+        var studentName = getElementById('nameStudent')
+
+        var validate = function (){
+            isValid = true;
+            var message = "This id is require";
+            var patternName = /[a-z]/g;
+
+            if (studentid.value === ""){
+              studentid.nextElementSibling.firstChild.nodeValue=message; 
+              isValid = false;
+            }else{
+                studentid.nextElementSibling.firstChild.nodeValue=""
+            }
+
+            if(studentName.value.match(patternName)){
+                console.log('ok');
+            }else{
+                console.log('ssss');
+            }
+        }
+        getElementById('submit_form').onclick=validate;
+    </script>
+</body>
+
+</html>
