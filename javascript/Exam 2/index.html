@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         table thead th {
@@ -13,44 +13,31 @@
             margin: 10px;
             width: 200px;
         }
+
         table tbody td {
             border: solid black 3px;
-        } 
+        }
+
         table {
             border-collapse: collapse;
-            
+
         }
+
         .table_form {
-            display: none;
+            /* display: none; */
         }
+
         .table_display {
             display: block;
         }
-        #form {
-            display: none;
+
+        .form_full {
+            display: flex;
         }
-        
     </style>
 </head>
 
 <body>
-    <div id="login-modal" class="hidden">
-        <h2>Đăng nhập</h2>
-    <form>
-        <div >
-          <label for="username">Tên đăng nhập:</label>
-          <input type="text" id="username" name="username">
-        </div>
-        <div>
-          <label for="password">Mật khẩu:</label>
-          <input type="password" id="password" name="password">
-        </div>
-        <button type="submit" id = "submit">Đăng nhập</button>
-      </form>
-    </div>
-    <div id="logout-button" class="hidden">
-      <button>Đăng xuất</button>
-    </div>
     <form id="form">
         <div>
             <label>ID:</label>
@@ -75,8 +62,8 @@
             <input id="submit_form" type="button" value="Submit"><span> </span>
         </div>
     </form>
-    <div >
-        <table id = table class="table_form">
+    <div>
+        <table id=table class="table_form">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -84,14 +71,15 @@
                     <th>Birthday</th>
                     <th>Phone Number</th>
                 </tr>
+
             </thead>
             <tbody id="add_info">
 
             </tbody>
         </table>
-    </div>
-    <script src="login.js"></script>
-    <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script src="main.js"></script>
 </body>
 
 </html>

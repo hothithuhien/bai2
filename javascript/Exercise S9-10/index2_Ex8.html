@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let month = parseInt(prompt("Enter the number of month:"));
+        let today = new Date();
+        let year = today.getFullYear();
+        let day = new Date(year, month, 0).getDate();
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 8:
+            case 10:
+            case 7:
+            case 12:
+                console.log(`Numbers in the month ${month} year ${year} is: 31`);
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log(`Numbers in the month ${month} year ${year} is: 30`);
+                break;
+            case 2:
+                console.log(`Numbers in the month ${month} year ${year} is: ${day}`);
+                break;
+            default:
+                console.log("please enter correct number!");
+        }
+    </script>
+</body>
+
+</html>

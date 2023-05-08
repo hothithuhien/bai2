@@ -1,0 +1,20 @@
+[
+    {
+        "id": "7a6893",
+        "name": "Johnny",
+        "birthday": "01/01/1999",
+        "phoneNumber": "090-056-7890"
+    },
+    {
+        "id": "6y7u90",
+        "name": "Blake",
+        "birthday": "01/01/1998",
+        "phoneNumber": "090-056-1234"
+    },
+    {
+        "id": "4re5t6",
+        "name": "Lily",
+        "birthday": "01/01/2000",
+        "phoneNumber": "090-056-3456"
+    }
+]

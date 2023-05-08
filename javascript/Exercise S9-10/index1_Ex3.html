@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        
+        let nameList = [];
+
+        // Sử dụng vòng lặp để nhập tên từ người dùng và thêm vào mảng nameList
+        while (true) {
+            let name = prompt("Nhập tên (nhập 'xong' để kết thúc): ");
+            if (name.toLowerCase() === "xong") {
+                break;
+            } {
+            nameList.push(name);}
+        }
+
+        // Sắp xếp mảng nameList theo thứ tự tăng dần
+        nameList.sort();
+
+        // In danh sách tên sau khi sắp xếp
+        console.log("Danh sách tên sau khi sắp xếp tăng dần:");
+        for (let i = 0; i < nameList.length; i++) {
+            console.log(nameList[i]);
+        }
+
+
     </script>
 </body>
+
 </html>

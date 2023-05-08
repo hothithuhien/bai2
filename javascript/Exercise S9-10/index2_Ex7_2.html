@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <tbody id=displayinfo></tbody>
+  <script>
+    /*Edit program to permit user inputs a list of student from keyboard until “esc” key pressed*/
+
+    function addStudentFromInput() {
+      let students = [];
+      while (true) {
+        var code = prompt("Nhập mã sinh viên (hoặc ấn ESC để thoát):");
+        if (code === null || code === "" || code === "esc" || code ===
+          "ESC" ||
+          code === "Esc"
+        ) {
+          break;
+        }
+        let name = prompt("Nhập họ tên sinh viên:");
+        var age = prompt("Nhập tuổi của sinh viên:");
+        var sex = prompt("Nhập giới tính của sinh viên:");
+        let student = {
+          scode: code,
+          sname: name,
+          sage: age,
+          ssex: sex,
+        };
+
+        students.push(student);
+      }
+
+      console.log(students);
+    }
+
+    addStudentFromInput()
+
+  </script>
+</body>
+
+</html>

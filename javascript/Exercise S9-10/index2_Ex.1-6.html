@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Exercise 1*/
+        let a;
+        let b;
+        a = 5;
+        b = 10;
+        let c = a;
+        a = b;
+        b = c;
+        console.log(`value of a is ${a}`);
+        console.log(`value of b is ${b}`);
+
+        /*Exercise 2*/
+        let mathScore = parseFloat(prompt('Enter math score:'));
+        let physicScore = parseFloat(prompt('Enter physic score'));
+        let chemistryScore = parseFloat(prompt('Enter chemistry score:'));
+        let avg = (mathScore + physicScore + chemistryScore) / 3;
+        let avgScore = avg.toFixed(1);
+        let rank;
+        if (avgScore >= 8.5) {
+            rank = "A";
+
+        } else if (avgScore >= 6.5) {
+            rank = "B";
+
+        } else if (avgScore >= 5.0) {
+            rank = "C";
+
+        } else {
+            rank = "D";
+
+        }
+        console.log(`Average score is: ${avgScore}`);
+        console.log(`Rank is: ${rank}`);
+
+        /*Exercise 3*/
+        let numberA = parseFloat(prompt("Enter a:"));
+        let numberB = parseFloat(prompt("Enter b:"));
+        let x = (-numberA) / numberB;
+        console.log(`x is ${x}`);
+
+        /*Exercise 4*/
+        let numbera = parseFloat(prompt("Nhập giá trị a:"));
+        let numberb = parseFloat(prompt("Nhập giá trị b:"));
+        let numberc = parseFloat(prompt("Nhập giá trị c:"));
+
+        // Tính delta
+        let delta = numberb * numberb - 4 * numbera * numberc;
+
+        // Tính giá trị của x1 và x2
+        let x1, x2;
+
+        if (delta > 0) {
+            x1 = (-numberb + Math.sqrt(delta)) / (2 * numbera);
+            x2 = (-numberb - Math.sqrt(delta)) / (2 * numbera);
+            console.log(`Phương trình có hai nghiệm là x1 = ${x1} và x2 = ${x2}`);
+        } else if (delta == 0) {
+            x1 = -numberb / (2 * numbera);
+            console.log(`Phương trình có nghiệm kép x1 = x2 = ${x1}`);
+        } else {
+            console.log("Phương trình vô nghiệm");
+        }
+
+        /*Exercise 5*/
+        let sum = 0;
+        for (let i = 0; i <= 50; i++) {
+            sum += i
+        }
+        console.log(`sum is: ${sum}`);
+
+        /*Exercise 6*/
+        let a1 = 0, a2 = 1, a3;
+        for (let i = 1; i <= 20; i++) {
+            console.log(a1);
+            a3 = a1 + a2;
+            a1 = a2;
+            a2 = a3;
+        }
+
+    </script>
+</body>
+
+</html>
